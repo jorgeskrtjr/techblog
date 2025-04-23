@@ -40,7 +40,7 @@ Este projeto é uma plataforma web para criação, leitura e comentários em art
 
  ![image](https://github.com/user-attachments/assets/16a20ab6-9930-4a9c-b1c8-8877d51a4549)
 
- 🧰 Requisitos
+## 🧰 Requisitos
 Backend:
 Java 17+
 Maven 3.8+
@@ -50,12 +50,13 @@ Node.js 18+
 
 Angular CLI (npm install -g @angular/cli)
 
-🚀 Como rodar o projeto
-1. Clonar o repositório
+## 🚀 Como rodar o projeto
+-1. Clonar o repositório
    
 git clone https://github.com/jorgeskrtjr/techblog
 cd api-techblog
-3. Rodar o Backend (Java / Spring Boot)
+
+-2. Rodar o Backend (Java / Spring Boot)
 Via terminal:
 ./mvnw spring-boot:run
 ou, se não estiver usando wrapper:
@@ -67,7 +68,7 @@ Importar como projeto Maven
 Rodar a classe Application.java
 Disponível em:  http://localhost:8080/
 
-3. Rodar o Frontend (Angular)
+-3. Rodar o Frontend (Angular)
 cd front-blogtech
 npm install
 ng serve
