@@ -1,0 +1,42 @@
+<div *ngIf="article">
+  <div class="article-page">
+ 
+   <header class="article-header">
+     <h1 class="title">{{article.title}}</h1>
+     <div class="meta">
+       <span>Publicado por {{article.authorName}} • 15/01/2025</span>
+       <span class="tag">{{article.category}}</span>
+     </div>
+   </header>
+ 
+   <section class="article-content">
+     <p>{{article.content}}</p>
+   </section>
+ 
+   <section class="comments-section"> 
+     <!-- <h2>Comentários</h2>
+     
+     <textarea class="comment-input" placeholder="Escreva seu comentário..."></textarea>
+   
+     <app-button 
+     [label]="'Comentar'">
+     </app-button> 
+ 
+     <div class="comment">
+       <img src="avatar1.jpg" alt="Avatar">
+       <div class="comment-body">
+         <div class="comment-header">
+           <strong>Maria Luiza</strong> <span>2d</span>
+         </div>
+         <p>Ótimo artigo! Acho importante lembrar que...</p>
+       </div>
+     </div> -->
+
+
+  <app-comment-list [articleId]="article.id"></app-comment-list>
+
+   </section>
+ 
+ </div>
+ </div>
+ 

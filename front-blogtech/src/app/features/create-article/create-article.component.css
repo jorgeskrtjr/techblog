@@ -1,0 +1,40 @@
+form {
+ display: flex;
+ flex-direction: column;
+ gap: 1rem;
+ max-width: 900px;
+ margin: auto;
+ margin-top: 2rem;
+
+ input, textarea {
+   background: #eff4eb;
+   border: none;
+   border-radius: 8px;
+   padding: 1rem;
+   font-size: 1rem;
+ }
+
+ .tags {
+   display: flex;
+   gap: 0.5rem;
+   flex-wrap: wrap;
+
+   button {
+     background: #eff4eb;
+     border: none;
+     border-radius: 12px;
+     padding: 0.5rem 1rem;
+     cursor: pointer;
+
+     &.selected {
+       background-color: #8cc63f;
+       color: white;
+     }
+   }
+ }
+  
+ .form-header{
+  display: flex;
+  justify-content: space-between;
+ }
+}

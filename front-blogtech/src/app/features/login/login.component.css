@@ -1,0 +1,31 @@
+.login-container {
+ max-width: 400px;
+ margin: 0 auto;
+ padding: 2rem;
+
+h1 { 
+ text-align: center;
+}
+ form {
+   margin-top: 3rem;
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+
+   input {
+     padding: 0.8rem;
+     border-radius: 8px;
+     border: none;
+     background: #edf2e9;
+   }
+
+   button {
+     background: #5da130;
+     color: white;
+     border: none;
+     padding: 0.8rem;
+     border-radius: 8px;
+     cursor: pointer;
+   }
+ }
+}

@@ -1,0 +1,15 @@
+<textarea
+  [(ngModel)]="commentContent"
+  class="comment-input"
+  placeholder="Escreva seu comentário..."
+></textarea>
+
+<app-button
+  [label]="'Comentar'"
+  (click)="submitComment()"
+></app-button>
+
+<div *ngFor="let comment of comments">
+ <app-comment [comment]="comment"></app-comment>
+</div>
+

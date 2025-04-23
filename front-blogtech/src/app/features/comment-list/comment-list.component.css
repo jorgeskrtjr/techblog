@@ -1,0 +1,18 @@
+.comment-input {
+ height: 4rem;
+ width: 100%;
+ padding: 12px;
+ border-radius: 10px;
+ border: none;
+ background-color: #eef3e9;
+ font-size: 16px;
+ outline: none;
+ vertical-align: top; 
+ resize: vertical;
+ margin-bottom: 1rem;
+}
+
+textarea {
+ font-family: 'Arial', sans-serif;
+ font-size: 16px;
+}

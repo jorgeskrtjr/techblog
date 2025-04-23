@@ -1,0 +1,19 @@
+<div class="comment" [ngClass]="{ 'reply-comment': isReply }">
+ <img src="https://i.pravatar.cc/40?u={{ comment.authorName }}" alt="Avatar">
+ <div class="comment-body">
+   <div class="comment-header">
+     <strong>{{ comment.authorName }}</strong>
+     <span>• agora</span>
+   </div>
+   <p>{{ comment.content }}</p>
+
+   <!-- Renderizar respostas se existirem -->
+   <div class="replies" *ngIf="comment.replies?.length">
+     <app-comment 
+       *ngFor="let reply of comment.replies"
+       [comment]="reply"
+       [isReply]="true">
+     </app-comment>
+   </div>
+ </div>
+</div>

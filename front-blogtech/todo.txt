@@ -1,0 +1,118 @@
+--google font - ok
+--lucide icons - ok 
+--header e footer - ok 
+
+-transformar article em um componente 
+
+- elementos para componentizar: 
+botao das tag - ok
+botao verde - ok 
+fazer componente de layout p quando nao precisar do header e do footer - ok
+
+
+saas -> para redaçaõ no enem 
+
+
+
+ ngModule x standalone
+ quais as diferenças dos tipos dos guard
+ 
+❯◯ CanActivate
+ ◯ CanActivateChild
+ ◯ CanDeactivate
+ ◯ CanMatch
+
+ o que faz o @injectable
+
+
+update + edit do article
+   
+this.articleData = navigation?.extras?.state?.['article']; // essa é a melhor forma de passar os dados de um componente para o outro? fica a duvida
+
+fazer um card verde p falar q criou certinho - ux 
+auth -> api 
+
+comments
+
+tratar caso nao tenha nenhum article
+
+-> MELHORIAS API 
+tratamento de erro tipo 
+
+findById e o id não existe
+
+login 
+logout 
+verifyToken 
+
+getArticles : List
+
+createArticles 
+editArticles
+deleteArticles
+getArticlesById
+
+
+principais funcionalidade: 
+
+pesquisar artigo 
+paginação
+tags
+
+USER - 
+userid
+createdAt
+editedAt
+
+name
+description 
+
+email
+password
+
+ARTICLE - 
+
+articleid - number
+createdAt - date
+editedAt - date
+
+title - text
+authorName - text 
+authorId - number
+content - text
+image - text
+tag - enum ? 
+
+--> Na minha cabeça temos duas formas de elaborar as TAG's, deixa como enum, predefinidas e sem a possibilidade
+de alteração ou criar uma tabela articles_tag considerando que seja um relacionamente de muitos para muitos,
+meu receio é aumentar muito o nivel de complexidade.
+
+
+--> Pensar na melhor forma de armazenar a imagem, estou considerando um serviço externo ou salvar na pasta local 
+guardando o endereço como string no banco 
+
+
+-migration tool
+
+ Spring Web
+
+Para criar sua API REST.
+
+Spring Data JPA
+
+Para usar ORM (Hibernate) com o PostgreSQL.
+
+PostgreSQL Driver
+
+Para conectar com seu banco hospedado (ex: Neon).
+
+Flyway Migration
+
+Para versionamento e controle das migrações de banco de dados.
+
+Spring Boot DevTools (opcional)
+
+Auto reload durante o desenvolvimento.
+
+Validation 
+ 

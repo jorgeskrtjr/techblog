@@ -1,0 +1,72 @@
+<div class="feed-header">
+  
+  <div class="header"> 
+    <h1>Todos os artigos</h1>
+    <app-button 
+     [label]="'Criar artigo'" 
+    (clicked)="createArticle()">
+   </app-button>
+  </div>
+ 
+   <div class="categories">
+     <div class="category-filters">
+       <button *ngFor="let category of categories" (click)="selectCategory(category)" [class.selected]="selectedCategory === category">
+         {{ category }}
+       </button>
+     </div>
+   </div>
+ 
+     <input
+       type="text"
+       placeholder="Pesquisar..."
+       [(ngModel)]="searchQuery"
+       (ngModelChange)="onSearch(searchQuery)"
+       class="search-input"
+     />
+ 
+ </div>
+ 
+ <div class="feed-wrapper">
+  <div *ngFor="let article of articles" class="article-card">
+    <div 
+    (click)="goToArticle(article.id)"
+    class="article-content">
+      <div class="article-info">
+        <p class="article-meta">
+          In <strong>{{ article.category }}</strong> by {{ article.authorName}}
+        </p>
+        <h2 class="article-title">
+          {{ article.title }} 💀
+        </h2>
+        <p class="article-description">
+          {{ article.content }}
+        </p>
+        <div class="article-footer">
+          <div *ngIf="article.idAuthor === loggedUserId" (click)="editArticle(article)">
+            <span-lucide [img]="Pencil"></span-lucide>
+          </div>
+          <div 
+          *ngIf="article.idAuthor === loggedUserId" 
+          (click)="deleteArticle($event, article)"
+          style="cursor: pointer;"
+        >
+          <span-lucide [img]="Trash"></span-lucide>
+        </div>
+        </div>
+      </div>
+ 
+      <div class="article-image">
+        <img [src]="article.image || 'assets/default-thumb.png'" alt="thumb" />
+      </div>
+    </div>
+  </div>
+
+  <mat-paginator [length]="totalItems"
+               [pageSize]="pageSize"
+               [pageIndex]="page"
+               [pageSizeOptions]="[5, 10, 20]"
+               (page)="onPageChange($event)">
+  </mat-paginator>
+
+ </div>
+ 

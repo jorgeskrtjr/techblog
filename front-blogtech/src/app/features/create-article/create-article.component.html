@@ -1,0 +1,40 @@
+
+<form [formGroup]="articleForm" (ngSubmit)="submitForm()">
+<div class="form-header">
+  <h1>Novo artigo</h1>
+  <app-button 
+  [label]="'Criar artigo'" 
+  (clicked)="submitForm()">
+  </app-button> 
+</div>
+  <label>Título do artigo *</label>
+  <input formControlName="title" type="text" placeholder="Título" />
+  <div *ngIf="articleForm.get('title')?.touched && articleForm.get('title')?.invalid">
+    <small *ngIf="articleForm.get('title')?.hasError('required')">O título é obrigatório.</small>
+  </div>
+
+  <label>Imagem *</label>
+  <input type="file" (change)="onFileSelected($event)" />
+
+
+  <label>Tags *</label>
+  <div class="tags">
+    <button 
+      type="button"
+      *ngFor="let tag of tags"
+      (click)="toggleTag(tag)"
+      [class.selected]="isSelected(tag)">
+      {{ tag }}
+    </button>
+  </div>
+  <div *ngIf="articleForm.get('tags')?.touched && articleForm.get('tags')?.invalid">
+    <small *ngIf="articleForm.get('tags')?.hasError('required')">A categoria é obrigatória.</small>
+  </div>
+
+  <label>Conteúdo *</label>
+  <textarea formControlName="content" placeholder="Escreva aqui seu artigo..."></textarea>
+  <div *ngIf="articleForm.get('content')?.touched && articleForm.get('content')?.invalid">
+    <small *ngIf="articleForm.get('content')?.hasError('required')">O conteúdo é obrigatório.</small>
+  </div>
+
+</form>
