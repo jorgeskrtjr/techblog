@@ -41,11 +41,11 @@ Este projeto é uma plataforma web para criação, leitura e comentários em art
  ![image](https://github.com/user-attachments/assets/16a20ab6-9930-4a9c-b1c8-8877d51a4549)
 
 ## 🧰 Requisitos
-###Backend:
+- ### Backend:
 Java 17+
 Maven 3.8+
 
-###Frontend:
+- ### Frontend:
 Node.js 18+ 
 Angular CLI (npm install -g @angular/cli)
 
