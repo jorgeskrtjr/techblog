@@ -25,3 +25,15 @@ Este projeto é uma plataforma web para criação, leitura e comentários em art
 - **Armazenamento de token no localStorage**
 - **Upload de imagens com Cloudinary**
 - **Componentização com layouts distintos (público e autenticado)**
+
+ 
+ ## 📦 Principais funcionalidades
+- **Pesquisa por categorias e pela barra de pesquisa**
+- ![image](https://github.com/user-attachments/assets/7085f9ba-8b62-48e2-bbf4-c1c2fde18681)
+
+- **Adição de comentários**
+![image](https://github.com/user-attachments/assets/f2031213-eba4-42df-8875-1303706277dd)
+
+- **Possibilidade de exclusão e edição do artigo quando o usuário logado for o owner**
+- ![image](https://github.com/user-attachments/assets/16a20ab6-9930-4a9c-b1c8-8877d51a4549)
+
