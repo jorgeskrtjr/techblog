@@ -43,7 +43,7 @@ Este projeto é uma plataforma web para criação, leitura e comentários em art
 ## 🧰 Requisitos
 - ### Backend:
 Java 17+
-Maven 3.8+
+Maven 3.8
 
 - ### Frontend:
 Node.js 18+ 
